@@ -1,0 +1,9 @@
+<% if @user.tweets.all != nil %>
+  <div>
+    <ul>
+      <% @user.tweets.each do |tweet| %>
+        <li><%= tweet.body%></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
