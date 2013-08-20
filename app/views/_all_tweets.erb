@@ -1,4 +1,4 @@
-<% if @user.tweets.all != nil %>
+<% if @user.tweets.to_a != nil %>
   <div>
     <ul>
       <% @user.tweets.each do |tweet| %>
